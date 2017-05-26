@@ -35,7 +35,7 @@
 
 Param(
 	[string] $ResourceGroupLocation = "westeurope",
-	[string] $DeployIndex = "01",
+	[string] $DeployIndex = "25",
 	[string] $ResourceGroupPrefix = "MAS-RG",
 	[string] $AzureUserName = "admin@mas201706.onmicrosoft.com",
 	[string] $AzureUserPassword = "@zureSt@ck"
@@ -49,8 +49,8 @@ Login-AzureRmAccount -Credential $AadCred
 # Prepare environment variables.  
 $ResourceGroupName = $ResourceGroupPrefix + $DeployIndex
 $DeploymentName = $ResourceGroupPrefix + "-Dep" + $DeployIndex
-$TemplateUri = "https://raw.githubusercontent.com/evangelism/DevTest/master/AzureRG/DevTestRG/open-wb-infra/openWb.json"
-$TemplateParameterUri = "https://raw.githubusercontent.com/evangelism/DevTest/master/AzureRG/DevTestRG/open-wb-infra/openWb.parameters.json"
+$TemplateUri = "https://raw.githubusercontent.com/ashapoms/DevCon201706/master/MAS-ARM/MAS-ARM/azureSimpleVM.json"
+$TemplateParameterUri = "https://raw.githubusercontent.com/ashapoms/DevCon201706/master/MAS-ARM/MAS-ARM/azureSimpleVM.parameters.json"
 
 # Create a new resource group in given region.  
 New-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -Force
