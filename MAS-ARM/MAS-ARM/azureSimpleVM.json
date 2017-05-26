@@ -143,8 +143,7 @@
             "version": "latest"
           },
           "osDisk": {
-            "createOption": "FromImage",
-            "name": "[parameters('vmName')]"
+            "createOption": "FromImage"
           },
           "dataDisks": [
             {
