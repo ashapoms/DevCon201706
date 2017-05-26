@@ -45,7 +45,7 @@
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "addressPrefix": "10.0.0.0/16",
     "subnetPrefix": "10.0.0.0/24",
-    "computeApiVersion": "2015-06-15",
+    "computeApiVersion": "2016-04-30-preview",
     "networkApiVersion": "2015-06-15",
     "storageApiVersion": "2016-01-01"
   },
