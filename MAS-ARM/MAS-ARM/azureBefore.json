@@ -54,7 +54,7 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('storageAccountName')]",
-      "apiVersion": "[variables('storageAccountName')]",
+      "apiVersion": "[variables('storageApiVersion')]",
       "location": "[resourceGroup().location]",
       "properties": {
         "accountType": "Standard_LRS"

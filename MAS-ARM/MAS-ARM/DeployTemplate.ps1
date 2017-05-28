@@ -49,8 +49,8 @@ Login-AzureRmAccount -Credential $AadCred
 # Prepare environment variables.  
 $ResourceGroupName = $ResourceGroupPrefix + $DeployIndex
 $DeploymentName = $ResourceGroupPrefix + "-Dep" + $DeployIndex
-$TemplateUri = "https://raw.githubusercontent.com/ashapoms/DevCon201706/master/MAS-ARM/MAS-ARM/azureSimpleVM.json"
-$TemplateParameterUri = "https://raw.githubusercontent.com/ashapoms/DevCon201706/master/MAS-ARM/MAS-ARM/azureSimpleVM.parameters.json"
+$TemplateUri = "https://raw.githubusercontent.com/ashapoms/DevCon201706/master/MAS-ARM/MAS-ARM/azureBefore.json"
+$TemplateParameterUri = "https://raw.githubusercontent.com/ashapoms/DevCon201706/master/MAS-ARM/MAS-ARM/azureBefore.parameters.json"
 
 # Create a new resource group in given region.  
 New-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -Force
