@@ -29,6 +29,7 @@
     <Content Include="masSimpleVM.parameters.json" />
     <None Include="101-vm-simple-windows.json" />
     <None Include="azureAfter.json" />
+    <None Include="azureAfter.parameters.json" />
     <None Include="azureBefore.json" />
     <None Include="azureBefore.parameters.json" />
     <None Include="azureSimpleVM.json" />
