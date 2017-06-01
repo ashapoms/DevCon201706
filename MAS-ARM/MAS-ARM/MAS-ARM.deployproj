@@ -25,21 +25,14 @@
   <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
   <!-- vertag<:>end -->
   <ItemGroup>
-    <Content Include="masSimpleVM.json" />
-    <Content Include="masSimpleVM.parameters.json" />
-    <None Include="101-vm-simple-windows.json" />
     <None Include="azureAfter.json" />
     <None Include="azureAfter.parameters.json" />
     <None Include="azureBefore.json" />
     <None Include="azureBefore.parameters.json" />
-    <None Include="azureSimpleVM.json" />
-    <None Include="azureSimpleVM.parameters.json" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
     <None Include="DeployTemplate.ps1" />
-    <None Include="masPrep.json" />
-    <None Include="testVM.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
